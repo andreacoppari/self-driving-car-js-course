@@ -38,3 +38,11 @@ function polysIntersect(poly1, poly2){
     }
     return false;
 }
+
+function getRGBA(value){
+    const alpha=Math.abs(value);
+    const R=value<0?0:220;
+    const G=230;
+    const B=value>0?0:200;
+    return "rgba("+R+","+G+","+B+","+alpha+")";
+}
